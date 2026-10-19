@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ローカルAIと自作PC 動画アップロードツール</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #0b1418; color: #e7f2ef;
+    font-family: "Yu Gothic UI", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; line-height: 1.85; }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 22px 80px; }
+  h1 { font-size: 27px; line-height: 1.4; margin: 0 0 6px; }
+  .sub { color: #9dc0b9; margin: 0 0 34px; font-size: 15px; }
+  h2 { font-size: 19px; margin: 38px 0 10px; padding-left: 11px; border-left: 4px solid #3fe0c0; }
+  p, li { font-size: 15.5px; }
+  ul { padding-left: 1.25em; }
+  a { color: #7fd7c4; }
+  .card { background: #121f25; border: 1px solid #26424c; border-radius: 12px; padding: 18px 20px; margin: 18px 0; }
+  footer { margin-top: 56px; color: #7f9a95; font-size: 13.5px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ローカルAIと自作PC 動画アップロードツール</h1>
+  <p class="sub">個人用の動画アップロードツール（YouTube Data API v3）</p>
+
+  <div class="card">
+    <p style="margin:0">このサイトは、YouTubeチャンネル「ローカルAIと自作PC」の運営者が、
+    <strong>自分で制作した動画を、自分のチャンネルへ非公開でアップロードするためだけ</strong>に使う個人用ツールの説明ページです。
+    不特定の利用者へ配布するものではなく、利用者は運営者本人だけです。</p>
+  </div>
+
+  <h2>このツールがすること</h2>
+  <ul>
+    <li>制作済みの動画ファイル、題名、概要欄、サムネイル画像を、運営者本人のチャンネルへアップロードします。</li>
+    <li>公開設定は常に「非公開」で、公開への切り替えは人がYouTube Studioで行います。</li>
+    <li>アップロード以外の操作（動画の削除、コメント、チャンネル設定の変更など）は行いません。</li>
+  </ul>
+
+  <h2>使う権限</h2>
+  <p>Googleアカウントの認可（OAuth 2.0）で使うスコープは
+  <code>https://www.googleapis.com/auth/youtube.upload</code> だけです。
+  このスコープは、動画のアップロードに必要な最小の権限です。</p>
+
+  <h2>データの扱い</h2>
+  <p>認可で受け取るリフレッシュトークンは、運営者が管理するパスワード管理サービスにのみ保存し、
+  第三者へ送信しません。詳しくは <a href="./privacy/">プライバシーポリシー</a> をご覧ください。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>本ツールおよび本サイトに関するお問い合わせは、運営しているYouTubeチャンネル
+  <a href="https://www.youtube.com/@localai_pc" rel="noopener">ローカルAIと自作PC（@localai_pc）</a>
+  のコメント欄、またはチャンネルの「概要」に記載の連絡先までお願いします。</p>
+
+  <footer>
+    <p>最終更新: 2026-10-19 ／ 運営: YouTubeチャンネル
+    <a href="https://www.youtube.com/@localai_pc" rel="noopener">ローカルAIと自作PC</a></p>
+  </footer>
+</main>
+</body>
+</html>
