@@ -18,3 +18,7 @@ Google OAuth（YouTube Data API v3 / `youtube.upload` スコープ）の同意�
 
 静的HTMLだけです。ビルド処理、依存パッケージ、アクセス解析、Cookieはありません。
 秘密情報・APIキー・トークンは置いていません。
+
+## セキュリティ報告
+
+セキュリティ上の問題は公開Issueに詳細を書かず、[SECURITY.md](SECURITY.md) に記載したGitHubの非公開報告機能を使用してください。
